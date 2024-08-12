@@ -40,7 +40,7 @@ If you need assistance with anything else or have specific questions, just let m
 export async function POST(req) {
     const openai = new OpenAI({
         baseURL: "https://openrouter.ai/api/v1",
-        apiKey: "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"
+        apiKey: process.env.LLAMA_API_KEY
     })
     const data = await req.json()
 
